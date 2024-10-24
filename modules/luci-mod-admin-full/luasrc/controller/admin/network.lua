@@ -113,45 +113,45 @@ function index()
 		end
 
 
-		if nixio.fs.access("/etc/config/dhcp") then
-			page = node("admin", "network", "dhcp")
-			page.target = cbi("admin_network/dhcp")
-			page.title  = _("DHCP and DNS")
-			page.order  = 30
+		--if nixio.fs.access("/etc/config/dhcp") then
+			--page = node("admin", "network", "dhcp")
+			--page.target = cbi("admin_network/dhcp")
+			--page.title  = _("DHCP and DNS")
+			--page.order  = 30
 
-			page = entry({"admin", "network", "dhcplease_status"}, call("lease_status"), nil)
-			page.leaf = true
+			--page = entry({"admin", "network", "dhcplease_status"}, call("lease_status"), nil)
+			--page.leaf = true
 
-			page = node("admin", "network", "hosts")
-			page.target = cbi("admin_network/hosts")
-			page.title  = _("Hostnames")
-			page.order  = 40
-		end
+			--page = node("admin", "network", "hosts")
+			--page.target = cbi("admin_network/hosts")
+			--page.title  = _("Hostnames")
+			--page.order  = 40
+		--end
 
-		page  = node("admin", "network", "routes")
-		page.target = cbi("admin_network/routes")
-		page.title  = _("Static Routes")
-		page.order  = 50
+		--page  = node("admin", "network", "routes")
+		--page.target = cbi("admin_network/routes")
+		--page.title  = _("Static Routes")
+		--page.order  = 50
 
-		page = node("admin", "network", "diagnostics")
-		page.target = template("admin_network/diagnostics")
-		page.title  = _("Diagnostics")
-		page.order  = 60
+		--page = node("admin", "network", "diagnostics")
+		--page.target = template("admin_network/diagnostics")
+		--page.title  = _("Diagnostics")
+		--page.order  = 60
 
-		page = entry({"admin", "network", "diag_ping"}, post("diag_ping"), nil)
-		page.leaf = true
+		--page = entry({"admin", "network", "diag_ping"}, post("diag_ping"), nil)
+		--page.leaf = true
 
-		page = entry({"admin", "network", "diag_nslookup"}, post("diag_nslookup"), nil)
-		page.leaf = true
+		--page = entry({"admin", "network", "diag_nslookup"}, post("diag_nslookup"), nil)
+		--page.leaf = true
 
-		page = entry({"admin", "network", "diag_traceroute"}, post("diag_traceroute"), nil)
-		page.leaf = true
+		--page = entry({"admin", "network", "diag_traceroute"}, post("diag_traceroute"), nil)
+		--page.leaf = true
 
-		page = entry({"admin", "network", "diag_ping6"}, post("diag_ping6"), nil)
-		page.leaf = true
+		--page = entry({"admin", "network", "diag_ping6"}, post("diag_ping6"), nil)
+		--page.leaf = true
 
-		page = entry({"admin", "network", "diag_traceroute6"}, post("diag_traceroute6"), nil)
-		page.leaf = true
+		--page = entry({"admin", "network", "diag_traceroute6"}, post("diag_traceroute6"), nil)
+		--page.leaf = true
 --	end
 end
 
