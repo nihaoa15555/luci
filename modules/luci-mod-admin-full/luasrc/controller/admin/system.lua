@@ -34,8 +34,8 @@ function index()
 
 	entry({"admin", "system", "flashops"}, call("action_flashops"), _("Backup / Flash Firmware"), 70)
 	--entry({"admin", "system", "flashops", "reset"}, post("action_reset"))
-	entry({"admin", "system", "flashops", "backup"}, post("action_backup"))
-	entry({"admin", "system", "flashops", "backupmtdblock"}, post("action_backupmtdblock"))
+	--entry({"admin", "system", "flashops", "backup"}, post("action_backup"))
+	--entry({"admin", "system", "flashops", "backupmtdblock"}, post("action_backupmtdblock"))
 	--entry({"admin", "system", "flashops", "backupfiles"}, form("admin_system/backupfiles"))
 
 	-- call() instead of post() due to upload handling!
