@@ -46,24 +46,24 @@ end
 --m2 = Map("dropbear", translate("SSH Access"),
 	--translate("Dropbear offers <abbr title=\"Secure Shell\">SSH</abbr> network shell access and an integrated <abbr title=\"Secure Copy\">SCP</abbr> server"))
 
---s = m2:section(TypedSection, "dropbear", translate("Dropbear Instance"))
---s.anonymous = true
---s.addremove = true
+s = m2:section(TypedSection, "dropbear", translate("Dropbear Instance"))
+s.anonymous = true
+s.addremove = true
 
 
---ni = s:option(Value, "Interface", translate("Interface"),
-	--translate("Listen only on the given interface or, if unspecified, on all"))
+ni = s:option(Value, "Interface", translate("Interface"),
+	translate("Listen only on the given interface or, if unspecified, on all"))
 
---ni.template    = "cbi/network_netlist"
---ni.nocreate    = true
---ni.unspecified = true
+ni.template    = "cbi/network_netlist"
+ni.nocreate    = true
+ni.unspecified = true
 
 
---pt = s:option(Value, "Port", translate("Port"),
+pt = s:option(Value, "Port", translate("Port"),
 	--translate("Specifies the listening port of this <em>Dropbear</em> instance"))
 
---pt.datatype = "port"
---pt.default  = 22
+pt.datatype = "port"
+pt.default  = 22
 
 
 --pa = s:option(Flag, "PasswordAuth", translate("Password authentication"),
@@ -83,12 +83,12 @@ end
 --ra.default  = ra.enabled
 
 
---gp = s:option(Flag, "GatewayPorts", translate("Gateway ports"),
+gp = s:option(Flag, "GatewayPorts", translate("Gateway ports"),
 	--translate("Allow remote hosts to connect to local SSH forwarded ports"))
 
---gp.enabled  = "on"
---gp.disabled = "off"
---gp.default  = gp.disabled
+gp.enabled  = "on"
+gp.disabled = "off"
+gp.default  = gp.disabled
 
 
 --s2 = m2:section(TypedSection, "_dummy", translate("SSH-Keys"),
