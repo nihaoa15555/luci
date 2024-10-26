@@ -7,7 +7,7 @@ a:section(SimpleSection).template  = "mia/mia_status"
 t = a:section(TypedSection, "basic")
 t.anonymous = true
 
-e = t:option(ListValue, "enable", translate("Enabled"))
+e = t:option(ListValue, "enable", translate("是否开启"))
 e:value("1", "启用")
 e:value("0", "禁用")
 e.default = "0"
