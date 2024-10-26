@@ -7,12 +7,16 @@ a:section(SimpleSection).template  = "mia/mia_status"
 t = a:section(TypedSection, "basic")
 t.anonymous = true
 
-e = t:option(Flag, "enable", translate("Enabled"))
-e.rmempty = false
+e = t:option(Value, "enable", translate("Enabled"))
+e:value("1", "启用")
+e:value("0", "禁用")
+e.default = "0"
 
-e = t:option(Flag, "strict", translate("Strict Mode"))
+e = t:option(Value, "strict", translate("Strict Mode"))
+e:value("1", "启用")
+e:value("0", "禁用")
+e.default = "0"
 e.description = translate("Strict Mode will degrade CPU performance, but it can achieve better results")
-e.rmempty = false
 
 t = a:section(TypedSection, "macbind", translate("Client Rules"))
 t.template = "cbi/tblsection"
