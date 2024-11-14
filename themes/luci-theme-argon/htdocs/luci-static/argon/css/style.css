@@ -72,6 +72,9 @@
 .icon-services:before {
   content: "\e909";
 }
+.icon-school:before {
+  content: "\e90b";
+}
 .icon-system:before {
   content: "\e90a";
 }
@@ -494,6 +497,9 @@ header > .container > .brand {
   position: absolute;
   left:1rem;
   padding-top:3px;
+}
+.main > .main-left > .nav > .slide > .menu[data-title= 基础设置 ]:before{
+	content: "\e90b";
 }
 .main > .main-left > .nav > .slide > .menu[data-title= 状态 ]:before{
 	content: "\e906";
