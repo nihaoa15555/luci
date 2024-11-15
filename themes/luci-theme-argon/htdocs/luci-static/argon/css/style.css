@@ -62,6 +62,12 @@
 .icon-school:before {
     content: "\e90b";
 }
+.icon-auto:before {
+    content: "\e90d";
+}
+.icon-diy:before {
+    content: "\e90c";
+}
 .icon-dashboard:before {
   content: "\e906";
 }
@@ -499,6 +505,12 @@ header > .container > .brand {
 }
 .main > .main-left > .nav > .slide > .menu[data-title= 基础设置 ]:before{
 	content: "\e90b";
+}
+.main > .main-left > .nav > .slide > .menu[data-title= 网页认证 ]:before{
+	content: "\e90d";
+}
+.main > .main-left > .nav > .slide > .menu[data-title= 防检测设置 ]:before{
+	content: "\e90c";
 }
 .main > .main-left > .nav > .slide > .menu[data-title= 状态 ]:before{
 	content: "\e906";
