@@ -2107,7 +2107,7 @@ msgid "Netmask"
 msgstr "子网掩码"
 
 msgid "Network"
-msgstr "网络"
+msgstr "网络配置"
 
 msgid "Network Utilities"
 msgstr "网络工具"
@@ -3096,7 +3096,7 @@ msgstr ""
 "接，并且接口须为非动态配置。"
 
 msgid "Status"
-msgstr "状态"
+msgstr "系统状态"
 
 msgid "Stop"
 msgstr "关闭"
@@ -3148,7 +3148,7 @@ msgid "Synchronizing..."
 msgstr "同步中..."
 
 msgid "System"
-msgstr "系统"
+msgstr "系统设置"
 
 msgid "System Log"
 msgstr "系统日志"
