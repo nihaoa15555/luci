@@ -509,7 +509,7 @@ header > .container > .brand {
 .main > .main-left > .nav > .slide > .menu[data-title= 网页认证 ]:before{
 	content: "\e90d";
 }
-.main > .main-left > .nav > .slide > .menu[data-title= 防检测 ]:before{
+.main > .main-left > .nav > .slide > .menu[data-title= 防检测配置 ]:before{
 	content: "\e90c";
 }
 .main > .main-left > .nav > .slide > .menu[data-title= 系统状态 ]:before{
