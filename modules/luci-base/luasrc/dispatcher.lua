@@ -20,6 +20,19 @@ local index = nil
 -- Fastindex
 local fi
 
+-- 在 dispatcher 初始化阶段添加检查
+function dispatch(...)
+    local http = require "luci.http"
+    local auth = require "luci.sauth"
+
+    -- 检查是否为首次启动且未授权
+    if nixio.fs.access("/etc/firstboot") and not nixio.fs.access("/etc/auth.lock") then
+        http.redirect(luci.dispatcher.build_url("auth/activate"))
+        return
+    end
+    -- 原有逻辑继续执行
+    ...
+end
 
 function build_url(...)
 	local path = {...}
