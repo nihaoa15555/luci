@@ -214,16 +214,7 @@ local function session_setup(user, pass, allowed_users)
 end
 
 function dispatch(request)
-	-- 新增首次启动检查逻辑（在此处插入）--
-    	local fs = require "nixio.fs"
-    	local http = require "luci.http"
-    
-    	-- 检查是否首次启动且未授权
-    	if fs.access("/etc/firstboot") and not fs.access("/etc/auth.lock") then
-	    http.redirect(luci.dispatcher.build_url("auth/activate"))
-            return -- 终止后续处理
-    	end
-    	-- 结束新增代码 --
+	
 	--context._disable_memtrace = require "luci.debug".trap_memtrace("l")
 	local ctx = context
 	ctx.path = request
