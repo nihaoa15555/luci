@@ -20,6 +20,7 @@ local index = nil
 -- Fastindex
 local fi
 
+
 function build_url(...)
 	local path = {...}
 	local url = { http.getenv("SCRIPT_NAME") or "" }
@@ -214,7 +215,6 @@ local function session_setup(user, pass, allowed_users)
 end
 
 function dispatch(request)
-	
 	--context._disable_memtrace = require "luci.debug".trap_memtrace("l")
 	local ctx = context
 	ctx.path = request
