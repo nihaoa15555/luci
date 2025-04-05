@@ -2107,7 +2107,7 @@ msgid "Netmask"
 msgstr "子网掩码"
 
 msgid "Network"
-msgstr "网络配置"
+msgstr "网络"
 
 msgid "Network Utilities"
 msgstr "网络工具"
@@ -3148,7 +3148,7 @@ msgid "Synchronizing..."
 msgstr "同步中..."
 
 msgid "System"
-msgstr "系统设置"
+msgstr "系统"
 
 msgid "System Log"
 msgstr "系统日志"
