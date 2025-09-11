@@ -521,7 +521,7 @@ msgid "Back to scan results"
 msgstr "返回至扫描结果"
 
 msgid "Backup / Flash Firmware"
-msgstr "备份/升级"
+msgstr "升级"
 
 msgid "Backup / Restore"
 msgstr "备份/恢复"
